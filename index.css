@@ -1,0 +1,55 @@
+*{box-sizing: border-box;}
+.text-title{font-family: Amatic;font-size: 45px;}
+
+/*NAVIGATION BAR*/
+.navbar-brand{
+  font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 10px
+}
+
+/*HOME SECTION*/
+@media screen and (min-width:768px) {
+  #home>div>div{flex-direction: row-reverse;}
+  #home>div>div>div:last-child{position: relative;}
+  .home-text{
+    position: absolute;
+    top: 50%;
+  }
+}
+
+/*SERVICES SECTION*/
+.service-image{
+  width: 70%;
+  margin: auto;
+}
+@media screen and (min-width:992px) {.service-image{margin: 0;}}
+
+/*CONTACT SECTION*/
+#contact>div>div>div>form>input[type="text"]{
+  background-color: transparent;
+  margin: 20px 0;
+}
+#contact>div>div>div>form>input[type="email"]{
+  background-color: transparent;
+  margin: 20px 0;
+}
+#contact>div>div>div>form>textarea{
+  resize: none;
+  background: transparent;
+  min-height: 150px;
+}
+.social-icon-container{
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 1px 1px 5px 1px #57c9db;
+  padding: 20px;
+  border-radius: 5px;
+}
+.social-icon-container>div{
+  flex-basis: 50%;
+  text-align: center;
+  margin: 40px 0;
+}
+.social-icon-container>div>a{font-size: 45px;}
